@@ -3,30 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <title>Project | Resume</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
+    <div id="body-wrapper">
         <header>
             <h1>Yoo, Hanjun</h1>
             <p>AI researcher/engineer</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="employment.html">Employment</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="certificate.html">Certificate</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="other.html">Others</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h3>Project 1</h3>
-            <h5>SEP. 2021 - DEC. 2021</h5>
-            <p>project desc</p>
-        </main>
+        <div id="navmain-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="employment.html">Employment</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="experience.html">Experiences</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="other.html">Others</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div id="main-wrapper">
+                    <h3>Project MEDI-KNEE</h3>
+                    <h6>Feb 2024 - Apr 2024</h6>
+                    <br>
+                    <ul>
+                        <li>Developed a Knee-MRI analysis service that could assist medical staffs during diagnosis.</li>
+                        <li>
+                            Using 3 AI models, provides 1) The probability of this patient having illness 2) Importance of
+                            every slide in the MRI 3) Why the model thinks this way, using Grad-CAM.
+                        </li>
+                        <li>
+                            Achieved around 5%p higher sensitivity compared to the base research paper, and received
+                            positive feedback from doctors.
+                        </li>
+                    </ul>
+                    <br>
+                    <h3>Turtle-ing</h3>
+                    <h6>Jul 2021</h6>
+                    <br>
+                    <ul>
+                        <li>Developed a service that detects and alerts users in forward-head posture.</li>
+                        <li>
+                            Alerts users who are too close to the screen, provides daily average distance to the screen,
+                            and provides hand-made stretch exercise videos.
+                        </li>
+                        <li>3rd place in OASIS Hackathon</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
         <footer>
             <p>&#169; All rights reserved, <a href="">Credits</a></p>
         </footer>
+    </div>
     </body>
 </html>

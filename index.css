@@ -13,6 +13,19 @@ header, footer{
     background-color: antiquewhite;
 }
 
+header h1, header p {
+    text-align: left;
+    padding: 0.5% 1%;
+    font-size: calc(2px + 1.5vw);
+    color: #3a4454;
+}
+
+footer p{
+    text-align: center;
+    padding: 1% 0;
+    font-size: calc(2px + 1.0vw);
+}
+
 #navmain-wrapper{
     display: flex;
     flex-direction: row; /* using flexbox -> go to parent of everything, and make them be on one row */
@@ -31,7 +44,7 @@ nav ul{
 }
 
 nav li{
-    border: 5px #3a4454 solid;
+    border: 3px #3a4454 solid;
     text-align: center;
     margin: 5% auto;
     width: 80%; /* 80% of ul */
@@ -45,12 +58,28 @@ nav a{
 }
 
 main{
-    height: 100vh; /* Makes <main> tag have 100% hardware view height -> If there's too much content, will not be enough */
+    height: 120vh; /* Makes <main> tag have 100% hardware view height -> If there's too much content, will not be enough */
     width: 70%;
 }
 
 main img{
     max-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#intro {
+    font-size: calc(2px + 1.0vw);
+    padding: 1% 0;
+    color: #3a4454;
+}
+
+#main-wrapper {
+    font-size: calc(2px + 1.2vw);
+    padding: 2% 0;
+    color: #3a4454;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1024px) {
@@ -62,5 +91,8 @@ main img{
     }
     nav ul{
         flex-direction: row;
+    }
+    header h1, header p{
+        text-align: center;
     }
 }
