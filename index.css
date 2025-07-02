@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body-wrapper{
+    background-color: #f5dddd;
+    width: 80vw; /* Will limit width from the right; starting from left, limit 80% of hardware view width */
+    margin: auto;
+}
+
+header, footer{
+    background-color: antiquewhite;
+}
+
+#navmain-wrapper{
+    display: flex;
+    flex-direction: row; /* using flexbox -> go to parent of everything, and make them be on one row */
+    /* Could do width:30%, display:inline in both <nav> and <main> to make nav and main be in one line, with different widths */
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    border: 5px #3a4454 solid;
+    text-align: center;
+    margin: 5% auto;
+    width: 80%; /* 80% of ul */
+    text-decoration: none;
+}
+
+nav a{
+    padding: 1% 2%; /* Top&Bottom, Left&Right */
+    font-size: calc(2px + 1.5vw);
+    color: #3a4454;
+}
+
+main{
+    height: 100vh; /* Makes <main> tag have 100% hardware view height -> If there's too much content, will not be enough */
+    width: 70%;
+}
+
+main img{
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+    #navmain-wrapper{
+        flex-direction: column;
+    }
+    nav, main{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+}
