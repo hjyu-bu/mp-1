@@ -155,6 +155,7 @@ main img{
     }
     nav ul{
         flex-direction: row;
+        max-width: 100%;
     }
     nav li{
         border: 1px #3a4454 solid;
