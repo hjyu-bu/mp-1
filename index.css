@@ -4,26 +4,27 @@
 }
 
 #body-wrapper{
-    background-color: #f5dddd;
+    background-color: antiquewhite;
     width: 80vw; /* Will limit width from the right; starting from left, limit 80% of hardware view width */
     margin: auto;
+    font-family: "Sora", sans-serif;
 }
 
 header, footer{
-    background-color: antiquewhite;
+    background-color: #f5dddd;
 }
 
 header h1, header p {
     text-align: left;
-    padding: 0.5% 1%;
-    font-size: calc(2px + 1.5vw);
+    padding: 1vh 2vw;
+    font-size: calc(2px + 1vw + 0.75vh);
     color: #3a4454;
 }
 
 footer p{
     text-align: center;
-    padding: 1% 0;
-    font-size: calc(2px + 1.0vw);
+    padding: 1vh 0;
+    font-size: calc(2px + 0.75vw + 0.5vh);
 }
 
 #navmain-wrapper{
@@ -46,40 +47,103 @@ nav ul{
 nav li{
     border: 3px #3a4454 solid;
     text-align: center;
-    margin: 5% auto;
+    margin: 5vh auto;
+    padding: 1.5vh 0;
     width: 80%; /* 80% of ul */
     text-decoration: none;
 }
 
 nav a{
-    padding: 1% 2%; /* Top&Bottom, Left&Right */
-    font-size: calc(2px + 1.5vw);
+    font-size: calc(2px + 1vw + 0.75vh);
     color: #3a4454;
+    text-decoration: none;
 }
 
 main{
-    height: 120vh; /* Makes <main> tag have 100% hardware view height -> If there's too much content, will not be enough */
+    height: calc(60vh + 30vw); /* Makes <main> tag have 100% hardware view height -> If there's too much content, will not be enough */
     width: 70%;
 }
 
-main img{
-    max-width: 90%;
-    display: block;
-    margin: auto;
+#main-wrapper ul {
+    padding-left: 0;
+    text-align: left;
+}
+
+#main-wrapper .center-list {
+    text-align: center;
+    list-style: none;
+}
+
+#main-wrapper h6, #main-wrapper ul, #main-wrapper .newline {
+    margin-bottom: calc(3vh + 1vw);
 }
 
 #intro {
-    font-size: calc(2px + 1.0vw);
-    padding: 1% 0;
+    font-size: calc(2px + 0.75vw + 0.5vh);
+    padding: 1vh 0;
     color: #3a4454;
 }
 
 #main-wrapper {
-    font-size: calc(2px + 1.2vw);
-    padding: 2% 0;
+    font-size: calc(2px + 0.9vw + 0.6vh);
+    padding: 2vh 0;
     color: #3a4454;
     display: flex;
     flex-direction: column;
+    margin: 0 3%;
+    text-align: center;
+}
+
+main img{
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: 1.5vh auto;
+}
+
+#calc-wrapper {
+    padding: 2vh 0;
+    color: #3a4454;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#calc-wrapper label, #calc-wrapper input {
+    font-size: calc(2px + 0.9vw + 0.6vh);
+    margin: 0 1%;
+    width: 20%;
+    text-align: center;
+    max-height: calc(2vw + 0.5vh);
+}
+
+#button-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#button-wrapper button {
+    margin: 2vh 1%;
+    padding: 1vh 2%;
+    font-size: calc(2px + 0.75vw + 0.5vh);
+    background-color: #3a4454;
+    color: white;
+    border: none;
+    width: 15%;
+}
+
+#output {
+    font-size: calc(2px + 0.9vw + 0.6vh);
+    text-align: center;
+}
+
+.neg-output {
+    color: darkred;
+}
+
+.pos-output {
+    color: #3a4454;
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,7 +156,15 @@ main img{
     nav ul{
         flex-direction: row;
     }
+    nav li{
+        border: 1px #3a4454 solid;
+        margin: 1vh auto;
+        padding: calc(0.5vh + 0.5vw) 0;
+    }
     header h1, header p{
         text-align: center;
+    }
+    #main-wrapper h6, #main-wrapper ul, #main-wrapper .newline{
+        margin-bottom: calc(0.5vh + 2.5vw);
     }
 }
