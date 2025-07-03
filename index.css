@@ -155,12 +155,15 @@ main img{
     }
     nav ul{
         flex-direction: row;
-        max-width: 100%;
     }
     nav li{
         border: 1px #3a4454 solid;
-        margin: 1vh auto;
+        margin: 1vh 0.5%;
         padding: calc(0.5vh + 0.5vw) 0;
+        width: 13%;
+    }
+    nav a{
+        font-size: calc(2px + 1vw);
     }
     header h1, header p{
         text-align: center;
