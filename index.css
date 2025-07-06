@@ -147,7 +147,7 @@ main img{
     color: #3a4454;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     #navmain-wrapper{
         flex-direction: column;
     }
