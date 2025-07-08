@@ -139,14 +139,6 @@ main img{
     text-align: center;
 }
 
-.neg-output {
-    color: darkred;
-}
-
-.pos-output {
-    color: #3a4454;
-}
-
 @media screen and (max-width: 1000px) {
     #navmain-wrapper{
         flex-direction: column;

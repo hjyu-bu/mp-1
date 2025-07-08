@@ -6,10 +6,10 @@ let result=document.getElementById("output");
 function doadd(){
     let value = Number(val1.value)+Number(val2.value);
     if (value < 0) {
-        result.className = "neg-output";
+        result.style.color="darkred";
     }
     else {
-        result.className = "pos-output";
+        result.style.color = "#3a4454";
     }
     result.innerHTML = `Result: ${value}`;
 }
@@ -17,10 +17,10 @@ function doadd(){
 function dosub(){
     let value = Number(val1.value)-Number(val2.value);
     if (value < 0) {
-        result.className = "neg-output";
+        result.style.color="darkred";
     }
     else {
-        result.className = "pos-output";
+        result.style.color = "#3a4454";
     }
     result.innerHTML = `Result: ${value}`;
 }
@@ -28,10 +28,10 @@ function dosub(){
 function domult(){
     let value = Number(val1.value)*Number(val2.value);
     if (value < 0) {
-        result.className = "neg-output";
+        result.style.color="darkred";
     }
     else {
-        result.className = "pos-output";
+        result.style.color = "#3a4454";
     }
     result.innerHTML = `Result: ${value}`;
 }
@@ -39,10 +39,10 @@ function domult(){
 function dodiv() {
     let value = Number(val1.value)/Number(val2.value);
     if (value < 0) {
-        result.className = "neg-output";
+        result.style.color="darkred";
     }
     else {
-        result.className = "pos-output";
+        result.style.color = "#3a4454";
     }
     result.innerHTML = `Result: ${value}`;
 }
@@ -53,10 +53,10 @@ function dopow() {
         value *= Number(val1.value);
     }
     if (value < 0) {
-        result.className = "neg-output";
+        result.style.color="darkred";
     }
     else {
-        result.className = "pos-output";
+        result.style.color = "#3a4454";
     }
     result.innerHTML = `Result: ${value}`;
 }
